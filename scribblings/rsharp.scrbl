@@ -1,10 +1,10 @@
 #lang scribble/manual
-@require[@for-label[rpp
+@require[@for-label[rsharp
                     racket/base]]
 
-@title{rpp}
+@title{rsharp}
 @author{mimoanon}
 
-@defmodule[rpp]
+@defmodule[rsharp]
 
 Package Description Here
