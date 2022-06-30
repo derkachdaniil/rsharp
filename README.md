@@ -1,3 +1,3 @@
-rpp
+rsharp
 ===
-Attempt at making c++ like syntax in racket. Still in early development
+attempt at making c# like syntax in racket for teaching purpose 
