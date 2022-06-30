@@ -1,5 +1,5 @@
 #lang info
-(define collection "rpp")
+(define collection "rsharp")
 (define deps '("brag-lib"
                "optimization-coach"
                "typed-racket-lib"
