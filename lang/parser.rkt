@@ -15,6 +15,7 @@ main_ : /"static" /"void" /"Main" /"(" /")" block
 function : /"void" NAME /"(" NAME (/"," NAME)* /")" block
 c_set_global : NAME /"=" @operator /";"
 
+
 block : /"{" ( if_oper | @for_oper |  @operator  /";" | NOPARSE )* /"}"
 operator : @calc-p15  | c_print | c_print_writeln | c_set | c_let | macro
 operand : INTEGER | STRING | "endl" | NAME | simple_list_comp | if_oper | @for_oper |  /"(" @calc-p15 /")"
@@ -38,10 +39,11 @@ binop10 : @calc-p10 ("==" | "!=") @calc-p10
 binop9 : @calc-p9 (">" | "<" | ">=" | "<=") @calc-p9
 binop6 : @calc-p6 ("+" | "-") @calc-p6
 binop5 : @calc-p5 ("%" | "*" | "/") @calc-p5
-unop3 :  not 
+unop3 :  not | unary_minus
 unop2 :  apply | index_
 
 not : (/"!" @calc-p3)
+unary_minus : (/"-" @calc-p3)
 
 apply : (@calc-p2 /"(" @calc-p15 (/"," @calc-p15)* /")" )
 index_ : (@calc-p2 /"[" @calc-p15 /"]" )
