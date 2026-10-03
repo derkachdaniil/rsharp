@@ -1,6 +1,8 @@
 #lang info
 (define collection "rsharp")
-(define deps '("brag-lib"
+(define deps '("draw-lib"
+               "htdp-lib"
+               "brag-lib"
                "optimization-coach"
                "typed-racket-lib"
                "base"))
